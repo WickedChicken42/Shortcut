@@ -2,6 +2,39 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
+	<key>UIApplicationShortcutItems</key>
+	<array>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>MountainShort</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>So majestic</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Mountains</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).mountains</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>SpaceShort</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Endless wonder</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Space</string>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).space</string>
+		</dict>
+		<dict>
+			<key>UIApplicationShortcutItemType</key>
+			<string>$(PRODUCT_BUNDLE_IDENTIFIER).ocean</string>
+			<key>UIApplicationShortcutItemTitle</key>
+			<string>Ocean</string>
+			<key>UIApplicationShortcutItemSubtitle</key>
+			<string>Very wet</string>
+			<key>UIApplicationShortcutItemIconFile</key>
+			<string>OceanShort</string>
+		</dict>
+	</array>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>$(DEVELOPMENT_LANGUAGE)</string>
 	<key>CFBundleExecutable</key>

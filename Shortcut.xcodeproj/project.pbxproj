@@ -8,20 +8,24 @@
 
 /* Begin PBXBuildFile section */
 		276A9EC1216FC04C0002B2C3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A9EC0216FC04C0002B2C3 /* AppDelegate.swift */; };
-		276A9EC3216FC04C0002B2C3 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A9EC2216FC04C0002B2C3 /* ViewController.swift */; };
+		276A9EC3216FC04C0002B2C3 /* MountainsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A9EC2216FC04C0002B2C3 /* MountainsVC.swift */; };
 		276A9EC6216FC04C0002B2C3 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276A9EC4216FC04C0002B2C3 /* Main.storyboard */; };
 		276A9EC8216FC04D0002B2C3 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 276A9EC7216FC04D0002B2C3 /* Assets.xcassets */; };
 		276A9ECB216FC04D0002B2C3 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 276A9EC9216FC04D0002B2C3 /* LaunchScreen.storyboard */; };
+		276A9ED3216FC5790002B2C3 /* SpaceVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A9ED2216FC5790002B2C3 /* SpaceVC.swift */; };
+		276A9ED5216FC58B0002B2C3 /* OceanVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 276A9ED4216FC58B0002B2C3 /* OceanVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		276A9EBD216FC04C0002B2C3 /* Shortcut.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Shortcut.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		276A9EC0216FC04C0002B2C3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		276A9EC2216FC04C0002B2C3 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		276A9EC2216FC04C0002B2C3 /* MountainsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MountainsVC.swift; sourceTree = "<group>"; };
 		276A9EC5216FC04C0002B2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		276A9EC7216FC04D0002B2C3 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		276A9ECA216FC04D0002B2C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		276A9ECC216FC04D0002B2C3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		276A9ED2216FC5790002B2C3 /* SpaceVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpaceVC.swift; sourceTree = "<group>"; };
+		276A9ED4216FC58B0002B2C3 /* OceanVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OceanVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +58,24 @@
 		276A9EBF216FC04C0002B2C3 /* Shortcut */ = {
 			isa = PBXGroup;
 			children = (
+				276A9ED6216FC5900002B2C3 /* Controllers */,
 				276A9EC0216FC04C0002B2C3 /* AppDelegate.swift */,
-				276A9EC2216FC04C0002B2C3 /* ViewController.swift */,
 				276A9EC4216FC04C0002B2C3 /* Main.storyboard */,
 				276A9EC7216FC04D0002B2C3 /* Assets.xcassets */,
 				276A9EC9216FC04D0002B2C3 /* LaunchScreen.storyboard */,
 				276A9ECC216FC04D0002B2C3 /* Info.plist */,
 			);
 			path = Shortcut;
+			sourceTree = "<group>";
+		};
+		276A9ED6216FC5900002B2C3 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				276A9EC2216FC04C0002B2C3 /* MountainsVC.swift */,
+				276A9ED4216FC58B0002B2C3 /* OceanVC.swift */,
+				276A9ED2216FC5790002B2C3 /* SpaceVC.swift */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -135,8 +149,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				276A9EC3216FC04C0002B2C3 /* ViewController.swift in Sources */,
+				276A9EC3216FC04C0002B2C3 /* MountainsVC.swift in Sources */,
+				276A9ED3216FC5790002B2C3 /* SpaceVC.swift in Sources */,
 				276A9EC1216FC04C0002B2C3 /* AppDelegate.swift in Sources */,
+				276A9ED5216FC58B0002B2C3 /* OceanVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -1,5 +1,5 @@
 //
-//  ViewController.swift
+//  MountainsVC.swift
 //  Shortcut
 //
 //  Created by James Ullom on 10/11/18.
@@ -8,7 +8,7 @@
 
 import UIKit
 
-class ViewController: UIViewController {
+class MountainsVC: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--MountainsVC-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="mountansVC" id="BYZ-38-t0r" customClass="MountainsVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="1056.8" y="-564.46776611694156"/>
         </scene>
-        <!--View Controller-->
+        <!--SpaceVC-->
         <scene sceneID="jiU-Li-2FT">
             <objects>
-                <viewController id="RKA-vR-U6X" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="spaceVC" id="RKA-vR-U6X" customClass="SpaceVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="XAE-30-tZg">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -75,10 +75,10 @@
             </objects>
             <point key="canvasLocation" x="1830" y="-564"/>
         </scene>
-        <!--View Controller-->
+        <!--OceanVC-->
         <scene sceneID="Jwm-8m-8gd">
             <objects>
-                <viewController id="4Uz-7C-NsK" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="oceanVC" id="4Uz-7C-NsK" customClass="OceanVC" customModule="Shortcut" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Fbu-7d-BLt">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
