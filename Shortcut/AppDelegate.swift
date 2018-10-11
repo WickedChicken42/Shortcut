@@ -13,9 +13,20 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     var window: UIWindow?
 
+    var vcArray = [UIViewController]()
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
+
+        // Instanciate the VCs and load them to the VC array so that the shortcut handler can bounce to them
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let mountainVC = storyboard.instantiateViewController(withIdentifier: "mountainsVC") as! MountainsVC
+        let spaceVC = storyboard.instantiateViewController(withIdentifier: "spaceVC") as! SpaceVC
+        let oceanVC = storyboard.instantiateViewController(withIdentifier: "oceanVC") as! OceanVC
+
+        // Loads the VCs to the VC array
+        vcArray = [mountainVC, spaceVC, oceanVC] 
+        
         return true
     }
 
@@ -41,6 +52,53 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
 
+    // Enum defined to match the vaules in the pinfo.list definition
+    enum ShortcutType: String {
+        case mountains = "mountains"
+        case space = "space"
+        case ocean = "ocean"
+    }
 
+    func application(_ application: UIApplication, performActionFor shortcutItem: UIApplicationShortcutItem, completionHandler: @escaping (Bool) -> Void) {
+        
+        // Show what we got from the force touch shortcut
+        print(shortcutItem.type)
+
+        // Extracting from the shortcutitem, breaking the string into compoents by "." and then getting the last item in the resulting string array
+        if let type = shortcutItem.type.components(separatedBy: ".").last {
+
+            // Instanciate the nav VC and provide it the array of VCs we use
+            let navVC = window?.rootViewController as! UINavigationController
+            navVC.setViewControllers(vcArray, animated: false)
+            
+            switch type {
+            case ShortcutType.mountains.rawValue:
+                print("These are the mountains")
+                navVC.popToViewController(vcArray[0], animated: true)
+                completionHandler(true)
+
+            case ShortcutType.space.rawValue:
+                print("This is the Space")
+                navVC.popToViewController(vcArray[1], animated: true)
+                completionHandler(true)
+
+            case ShortcutType.ocean.rawValue:
+                print("The oceans far and wide")
+                navVC.popToViewController(vcArray[2], animated: true)
+                completionHandler(true)
+
+            default:
+                print("No ShortcutType, defaulting to Mountains")
+                navVC.popToRootViewController(animated: true)
+                completionHandler(true)
+
+            }
+        } else {
+            completionHandler(false)
+
+        }
+        
+    }
+    
 }
 
